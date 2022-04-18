@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --card_width: 250px;
+  --card_border_radius: 16px;
+  --row_increment: 10px;
+  --card_small: 26;
+  --card_medium: 33;
+  --card_large: 45;
+}
+
+/* Navbar styles*/
+
+.navbar {
+  background: whitesmoke;
+  color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  color: #fa141d;
+}
+
+.pin_container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 90vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card_width));
+  grid-auto-rows: var(--row_increment);
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.card {
+  padding: 0;
+  margin: 1.5rem 1rem;
+  border-radius: var(--card_border_radius);
+  background-color: gray;
+}
+
+.card_small {
+  grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+  grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+  grid-row-end: span var(--card_large);
+}
+
+/* List of cards img*/
+
+.card1 {
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 {
+  background-image: url(../img/img2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 {
+  background-image: url(../img/img3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card4 {
+  background-image: url(../img/img4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card5 {
+  background-image: url(../img/img5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card6 {
+  background-image: url(../img/img6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card7 {
+  background-image: url(../img/img7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card8 {
+  background-image: url(../img/img8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card9 {
+  background-image: url(../img/img9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card10 {
+  background-image: url(../img/img10.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card11 {
+  background-image: url(../img/img11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card12 {
+  background-image: url(../img/img12.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card13 {
+  background-image: url(../img/img13.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card14 {
+  background-image: url(../img/img14.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card15 {
+  background-image: url(../img/img15.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card16 {
+  background-image: url(../img/img16.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card17 {
+  background-image: url(../img/img17.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card18 {
+  background-image: url(../img/img18.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}
